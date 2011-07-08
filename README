@@ -1,0 +1,31 @@
+Avance del simulador de Redes Opticas
+
+Requerimientos para compilarlo y correrlo
+
+- Sistema Operativo GNU Linux
+- Compilador GNU gcc preferiblemente
+- Biblioteca Aleph para estructuras de datos (Ver aqui un manual de instalacion: http://leandro.radixedu.org.ve/showthread.php?tid=3)
+- Biblioteca GNU Scientific Library (GSL) para generacion de numeros aleatorios
+- Utilitarios requeridos por Aleph: Bibliotecas nana, gmp y mpfr
+- Bilioteca QT4
+- qt4-qmake (Preferiblemente usar el IDE Qt Creator descargable en: http://qt.nokia.com/downloads/)
+
+Como usarlo?
+
+Existe un archivo llamado simulator.cfg en donde se configura el tamano de la grid y la cantidad de pasos de simulacion que se desea ejecutar
+
+w h n
+
+w = width (ancho de la grid)
+h = height (altura de la grid)
+n = num_iterations (numero de iteraciones que hara la simulacion)
+
+Luego de colocar esos datos se ejecuta el programa. Si no existe el archivo simulator.cfg tomara los valores por defecto 2 2 10
+
+Es importante destacar que aun le falta bastante, como permitir la configuracion en ejecucion del tamano de la grid (redimensionarla), elegir la cantidad de iteraciones deseadas, etc. Por ahora es bueno ejecutarlo desde el IDE o desde una consola ./OpticalNetSimulator porque las estadisticas las manda por esa salida. Ya para la ultima entrega deberia elegirse un medio grafioco de mostrarlas y ademas tener la posibilidad de generarle un archivo al usuario con dichos resultados. Lo que falta tambien es tomar la desicion de si darle al usuario una opcion de jugar con el simulador moviendolo paso a paso para que se vea una animacion de como se mueven los paquetes, la forma de iteraciones continuas como esta hecho en este momento me permite ejecutar grandes cantidades de pasos rapidamente (imaginen hacer 500 pasos con la modalidad paso a paso jeje).
+
+Bueno. Acepto criticas.
+
+Atte.
+Alejandro Mujica
+aledrums@gmail.com
